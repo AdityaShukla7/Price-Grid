@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+     display: block;
+}
+body {
+     line-height: 1;
+}
+ol,
+ul {
+     list-style: none;
+}
+blockquote,
+q {
+     quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+     content: "";
+     content: none;
+}
+table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+
+/* MY CSS CODE  */
+body {
+     background-color: #e5eff5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     width: auto;
+}
+
+main {
+     border-radius: 10px;
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+     margin: 50px 0;
+     box-shadow: 0 10px 20px #c2cdd3;
+}
+
+.community {
+     background-color: white;
+     border-radius: 10px 10px 0 0;
+     padding: 25px 50px;
+}
+
+.community h1 {
+     color: #00b6b2;
+     font-family: "Karla", sans-serif;
+     font-weight: 700;
+     font-size: 1.5em;
+     margin: 25px 0;
+}
+
+.community h2 {
+     color: #c0df34;
+     font-family: "Karla", sans-serif;
+     font-size: 1.1em;
+     font-weight: 700;
+     margin: 10px 0;
+     line-height: 1.5em;
+}
+
+.community p {
+     color: #9ea4ae;
+     font-family: "Karla", sans-serif;
+     font-weight: 400;
+     font-size: 1em;
+     line-height: 1.5em;
+     margin: 10px 0;
+}
+
+section {
+     display: flex;
+     flex-direction: column;
+}
+
+.subscription {
+     padding: 25px 50px;
+     background-color: #00b6b2;
+     display: flex;
+     flex-direction: column;
+}
+
+.subscription a {
+     align-self: center;
+}
+
+.whyus {
+     padding: 25px 50px;
+     background-color: #02c7c4;
+     border-radius: 0 0 10px 10px;
+}
+
+section h2 {
+     color: white;
+     font-family: "Karla", sans-serif;
+     font-size: 1.1em;
+     font-weight: 700;
+     margin: 10px 0;
+}
+
+span#price {
+     font-family: "Karla", sans-serif;
+     font-size: 2em;
+     display: inline-block;
+     color: white;
+     font-weight: 700;
+     margin: 10px 10px 10px 0;
+}
+
+p#pricing {
+     display: flex;
+     align-items: center;
+}
+
+p#pricing {
+     color: #08dfdc;
+}
+
+section p {
+     color: #99ffff;
+     font-family: "Karla", sans-serif;
+     font-size: 1em;
+     line-height: 1.5em;
+}
+
+a {
+     text-decoration: none;
+     background-color: #c0df34;
+     color: white;
+     display: inline-block;
+     font-family: "Karla", sans-serif;
+     font-size: 1em;
+     padding: 20px 115px;
+     margin: 25px 0;
+     font-weight: 700;
+     border-radius: 5px;
+     width: 65px;
+     box-shadow: 0 3px 10px #019290;
+     transition: background-color 200ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+     background-color: #b8d631;
+}
+
+section ul {
+     color: #99ffff;
+     font-family: "Karla", sans-serif;
+     font-size: 1em;
+     line-height: 1.5em;
+     margin: 10px 0;
+     display: inline-block;
+}
+
+@media (min-width: 900px) {
+     main {
+          width: 65%;
+     }
+     .subscription {
+          height: 120px;
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+     .subscription a {
+          align-self: flex-end;
+     }
+     a {
+          padding: 20px 60px;
+     }
+}
+
+@media (min-width: 1230px) {
+     main {
+          width: 50%;
+     }
+     .subscription {
+          height: auto;
+          flex: 1;
+          border-bottom-left-radius: 10px;
+          justify-content: flex-start;
+          padding: 35px 50px;
+     }
+
+     .subscription a {
+          align-self: center;
+     }
+
+     a {
+          padding: 20px 35%;
+     }
+
+     .whyus {
+          flex: 1;
+          border-bottom-left-radius: 0;
+          padding: 35px 50px;
+     }
+
+     section {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          border-radius: 10px;
+     }
+}
